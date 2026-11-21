@@ -1,10 +1,11 @@
 import json
+from pathlib import Path
 import duckdb
 from fastmcp import FastMCP
 from data_pulse_mcp.guardrails import validate_and_cap_sql
 
 mcp = FastMCP("DataPulse Warehouse Assistant")
-DB_PATH = "data/warehouse.duckdb"
+DB_PATH = str(Path(__file__).resolve().parents[2] / "data" / "warehouse.duckdb")
 
 
 def get_conn():
