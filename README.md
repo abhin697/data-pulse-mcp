@@ -72,9 +72,9 @@ Add the following entry to `claude_desktop_config.json` (or `.cursor/mcp.json`) 
 ### 1. Automated Data Quality Audit
 Claude inspects the warehouse schema and profiles `fact_orders` via MCP tools to detect and rank pipeline anomalies by severity:
 
-![Data Quality Audit Demo](assets/audit-demo.jpg)
+![Data Quality Audit Demo](assets/audit-demo.JPG)
 
 ### 2. Read-Only SQL Security Guardrail
 Mutating queries (`DELETE`, `DROP`, `UPDATE`) are rejected by `guardrails.py` before reaching DuckDB, keeping all rows intact:
 
-![SQL Guardrail Demo](assets/guardrail-demo.jpg)
+![SQL Guardrail Demo](assets/guardrail-demo.JPG)
